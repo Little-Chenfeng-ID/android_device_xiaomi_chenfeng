@@ -42,7 +42,7 @@ static void set(const std::string& path, const T& value) {
 
 }  // anonymous namespace
 
-class XiaomiChenfengUdfpsHander : public UdfpsHandler {
+class XiaomiChenfengUdfpsHandler : public UdfpsHandler {
   public:
     void init(fingerprint_device_t* device) {
         mDevice = device;
@@ -104,7 +104,7 @@ class XiaomiChenfengUdfpsHander : public UdfpsHandler {
 };
 
 static UdfpsHandler* create() {
-    return new XiaomiChenfengUdfpsHander();
+    return new XiaomiChenfengUdfpsHandler();
 }
 
 static void destroy(UdfpsHandler* handler) {
