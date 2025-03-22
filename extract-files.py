@@ -108,6 +108,8 @@ blob_fixups: blob_fixups_user_type = {
             'libtinyxml2.so',
             'libtinyxml2-v34.so'
     ),
+    'odm/lib64/libwrapper_dlengine.so': blob_fixup()
+        .add_needed('libwrapper_dlengine_shim.so'),
     (
         'odm/lib64/camera/com.qti.actuator.chenfeng_aac_imx882_gt9764ber_wide_i_actuator.so',
         'odm/lib64/camera/com.qti.actuator.chenfeng_ofilm_imx882_aw86016csr_wide_ii_actuator.so',
