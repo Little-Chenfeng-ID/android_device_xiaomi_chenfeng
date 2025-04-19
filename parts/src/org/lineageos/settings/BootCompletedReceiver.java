@@ -35,6 +35,7 @@ import android.view.Display.HdrCapabilities;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.display.ColorModeService;
 import org.lineageos.settings.refreshrate.RefreshUtils;
+import org.lineageos.settings.turbocharging.TurboChargingService;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
     private static final boolean DEBUG = false;
@@ -83,6 +84,10 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         // Start Refresh Rate Service
         RefreshUtils.startService(context);
+
+        // Start TurboChargingService
+        Intent turboChargingIntent = new Intent(context, TurboChargingService.class);
+        context.startService(turboChargingIntent);
     }
 
     private void overrideHdrTypes(Context context) {

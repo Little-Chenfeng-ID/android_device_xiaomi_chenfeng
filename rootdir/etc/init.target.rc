@@ -128,6 +128,10 @@ on boot
     chown system /sys/devices/system/cpu/hyp_core_ctl/enable
     chown system /sys/devices/system/cpu/hyp_core_ctl/hcc_min_freq
 
+    # Allow system to modify charging current
+    chown system system /sys/class/power_supply/battery/constant_charge_current
+    chmod 0664 /sys/class/power_supply/battery/constant_charge_current
+
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
 
@@ -246,3 +250,7 @@ on property:sys.perf_mode_active=0
     write /sys/devices/system/cpu/cpu5/cpufreq/scaling_governor powersave
     write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor powersave
     write /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor powersave
+
+# Monitor and apply Turbo Charging value via system property persist.sys.turbo_charge_current
+on property:persist.sys.turbo_charge_current=*
+    write /sys/class/power_supply/battery/constant_charge_current ${persist.sys.turbo_charge_current}
