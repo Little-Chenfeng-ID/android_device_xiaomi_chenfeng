@@ -248,6 +248,12 @@ blob_fixups: blob_fixups_user_type = {
         'odm/lib64/camera/plugins/com.xiaomi.plugin.jpegrAggr.so'
     ): blob_fixup()
         .add_needed('libcamerahdr_shim.so'),
+    'odm/lib64/camera/components/com.mi.node.mawsaliency.so': blob_fixup()
+       .add_needed('libwrapper_dlengine_shim.so'),
+
+    'odm/lib64/camera/components/com.mi.node.dlengine.so': blob_fixup()
+       .add_needed('libwrapper_dlengine_shim.so'),
+
     'odm/lib64/com.qti.feature2.anchorsync.so': blob_fixup()
         .replace_needed(
             'android.hardware.graphics.allocator-V1-ndk.so',
