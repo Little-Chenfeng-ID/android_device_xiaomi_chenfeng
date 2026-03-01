@@ -124,3 +124,9 @@ prebuilt_etc {
     src: "etc/ueventd.qcom.rc",
     vendor: true,
 }
+
+sh_binary {
+    name: "auto_slot_set",
+    src: "postinst/auto_slot_set.sh",
+    vendor: true,
+}
