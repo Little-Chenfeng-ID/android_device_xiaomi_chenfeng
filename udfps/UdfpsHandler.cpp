@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "UdfpsHandler.onyx"
+#define LOG_TAG "UdfpsHandler.chenfeng"
 
 #include <aidl/android/hardware/biometrics/fingerprint/BnFingerprint.h>
 #include <android-base/logging.h>
@@ -115,7 +115,7 @@ touch_base touchDataPrimary = {
 
 }  // anonymous namespace
 
-class XiaomiOnyxUdfpsHandler : public UdfpsHandler {
+class XiaomiChenfengUdfpsHandler : public UdfpsHandler {
   public:
     void init(fingerprint_device_t* device) {
         mDevice = device;
@@ -285,7 +285,7 @@ class XiaomiOnyxUdfpsHandler : public UdfpsHandler {
 };
 
 static UdfpsHandler* create() {
-    return new XiaomiOnyxUdfpsHandler();
+    return new XiaomiChenfengUdfpsHandler();
 }
 
 static void destroy(UdfpsHandler* handler) {
