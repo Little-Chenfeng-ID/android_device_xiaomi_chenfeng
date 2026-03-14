@@ -17,15 +17,15 @@ $(call inherit-product, device/xiaomi/chenfeng/device.mk)
 PRODUCT_NAME := lineage_chenfeng
 PRODUCT_DEVICE := chenfeng
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_BRAND := POCO
-PRODUCT_MODEL := 24069PC21G
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := 24053PY09I
 
 PRODUCT_SYSTEM_NAME := chenfeng_global
 PRODUCT_SYSTEM_DEVICE := chenfeng
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="chenfeng_global-user 15 AQ3A.240912.001 OS2.0.208.0.VNPMIXM release-keys" \
-    BuildFingerprint=POCO/chenfeng_global/chenfeng:15/AQ3A.240912.001/OS2.0.208.0.VNPMIXM:user/release-keys \
+    BuildDesc="chenfeng_global-user 14 UKQ1.240624.001 OS2.0.207.0.VNJCNXM release-keys" \
+    BuildFingerprint=Xiaomi/chenfeng_global/chenfeng:14/UKQ1.240624.001/OS2.0.207.0.VNJCNXM:user/release-keys \
     DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
