@@ -26,6 +26,7 @@ allow hal_camera_default vendor_sysfs_kgsl_proc:file { getattr open read };
 allow hal_camera_default vendor_sysfs_displayfeature:dir search;
 allow hal_camera_default vendor_sysfs_displayfeature:file { open read };
 allow hal_camera_default vendor_sysfs_kgsl:file { getattr open read };
+allow hal_camera_default vendor_sysfs_kgsl:lnk_file { getattr open read };
 allow hal_camera_default vendor_sysfs_battery_supply:dir search;
 allow hal_camera_default vendor_sysfs_battery_supply:file { getattr open read };
 allow hal_camera_default vendor_sysfs_battery_supply:file open;
@@ -50,7 +51,6 @@ set_prop(hal_camera, vendor_camera_sensor_prop)
 set_prop(hal_camera_default, vendor_camera_p3enable_prop)
 set_prop(hal_camera_default, vendor_camera_xdrversion_prop)
 set_prop(hal_camera_default, log_prop)
-hal_client_domain(hal_camera_default, hal_power)
 hal_server_domain(hal_camera_default, hal_camera_mivi)
 hal_server_domain(hal_camera_default, hal_camera_aon)
 hal_server_domain(hal_camera_default, hal_quickcamera)
@@ -59,3 +59,13 @@ add_service(hal_camera_server, hal_camera_aon_service)
 add_service(hal_camera_server, hal_quickcamera_service)
 add_service(hal_camera_server, hal_aidlbgservice_service)
 add_hwservice(hal_camera_server, hal_camera_mivi_hwservice)
+
+type vendor_hal_cameraperf_hwservice, hwservice_manager_type, protected_hwservice;
+type vendor_hal_camerapostproc_xiaomi_hwservice, hwservice_manager_type;
+
+hal_server_domain(hal_camera_default, vendor_hal_cameraperf)
+hal_server_domain(hal_camera_default, vendor_hal_camerapostproc_xiaomi)
+add_hwservice(hal_camera_server, vendor_hal_cameraperf_hwservice)
+add_hwservice(hal_camera_server, vendor_hal_camerapostproc_xiaomi_hwservice)
+allow hal_camera_client vendor_hal_cameraperf_hwservice:hwservice_manager find;
+allow hal_camera_client vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
