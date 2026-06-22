@@ -113,6 +113,10 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
     android.hardware.boot-service.qti.recovery
 
+# CIT sensor service dependency (missing hypsys lib caused a crash-loop -> RescueParty)
+PRODUCT_PACKAGES += \
+    xiaomi.system.hypsys.common-V1-ndk
+
 # Camera
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor
@@ -236,9 +240,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
 
 # Keymint
+# NOTE: StrongBox (NXP eSE) KeyMint removed. The embedded secure element (eSE1) does
+# not come up on this build, so StrongBox generate_key hangs ~18s then fails with
+# UNKNOWN_ERROR, freezing UPI/banking apps (e.g. GPay after entering the UPI PIN).
+# Dropping this module also drops its strongbox_keystore feature XML + vintf entry, so
+# apps fall back to TEE KeyMint (which works). Matches the working community ROMs.
 PRODUCT_PACKAGES += \
     android.hardware.authsecret-service.nxp \
-    android.hardware.security.keymint3-service.strongbox.nxp \
     android.hardware.weaver-service.nxp
 
 PRODUCT_PACKAGES += \
