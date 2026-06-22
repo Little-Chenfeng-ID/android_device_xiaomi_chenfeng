@@ -1,5 +1,5 @@
 # Battery
-genfscon sysfs /class/qcom-battery u:object_r:vendor_sysfs_battery_supply:s0
+# /class/qcom-battery already declared by device/qcom/sepolicy_vndr/sm8650 common — removed dup (was a build blocker)
 genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,ucsi/typec/port0/data_role u:object_r:vendor_sysfs_battery_supply:s0
 
 # Extcon sysfs
