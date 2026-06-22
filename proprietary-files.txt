@@ -3,22 +3,6 @@
 # ACDB
 odm/etc/acdbdata/Forte/Forte_acdb_cal.acdb
 odm/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
-vendor/etc/acdbdata/cliffs_cdp/CDP_cliffs_acdb_cal.acdb
-vendor/etc/acdbdata/cliffs_cdp/CDP_cliffs_workspaceFileXml.qwsp
-vendor/etc/acdbdata/cliffs_cdp_cliffs7/CDP_cliffs7_acdb_cal.acdb
-vendor/etc/acdbdata/cliffs_cdp_cliffs7/CDP_cliffs7_workspaceFileXml.qwsp
-vendor/etc/acdbdata/cliffs_mtp/MTP_cliffs_acdb_cal.acdb
-vendor/etc/acdbdata/cliffs_mtp/MTP_cliffs_workspaceFileXml.qwsp
-vendor/etc/acdbdata/cliffs_mtp_wcd9395_cliffs7/MTP_cliffs7_wcd9395_acdb_cal.acdb
-vendor/etc/acdbdata/cliffs_mtp_wcd9395_cliffs7/MTP_cliffs7_wcd9395_workspaceFileXml.qwsp
-vendor/etc/acdbdata/cliffs_mtp_wsa883x_cliffs7/MTP_cliffs7_acdb_cal.acdb
-vendor/etc/acdbdata/cliffs_mtp_wsa883x_cliffs7/MTP_cliffs7_workspaceFileXml.qwsp
-vendor/etc/acdbdata/cliffs_qrd/QRD_cliffs_acdb_cal.acdb
-vendor/etc/acdbdata/cliffs_qrd/QRD_cliffs_workspaceFileXml.qwsp
-vendor/etc/acdbdata/cliffs_qrd_cliffs7/QRD_cliffs7_acdb_cal.acdb
-vendor/etc/acdbdata/cliffs_qrd_cliffs7/QRD_cliffs7_workspaceFileXml.qwsp
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__eai_2.10_enpu3.pmd
 vendor/etc/acdbdata/ffv_models/ffv__6.2.5_0.1__eai_3.4__enpu_v4.pmd
@@ -39,48 +23,12 @@ vendor/etc/acdbdata/haptics_data/texture_tick.pcm
 vendor/etc/acdbdata/haptics_data/thud.pcm
 vendor/etc/acdbdata/haptics_data/tick.pcm
 vendor/etc/acdbdata/nn_ns_models/fai__11.0.1.0_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.7_enpu3.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.6_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.7_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.9.0_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.9.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.9.2_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_3.4_enpuv4.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__4.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.0.1.4_1.0__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.8.2_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.8.3_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__8.0.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_3.4_enpuv4.pmd
-vendor/etc/acdbdata/pineapple_aim/AIM_acdb_cal.acdb
-vendor/etc/acdbdata/pineapple_aim/AIM_workspaceFileXml.qwsp
-vendor/etc/acdbdata/pineapple_cdp/CDP_acdb_cal.acdb
-vendor/etc/acdbdata/pineapple_cdp/CDP_workspaceFileXml.qwsp
-vendor/etc/acdbdata/pineapple_mtp/MTP_acdb_cal.acdb
-vendor/etc/acdbdata/pineapple_mtp/MTP_workspaceFileXml.qwsp
-vendor/etc/acdbdata/pineapple_qrd/QRD_acdb_cal.acdb
-vendor/etc/acdbdata/pineapple_qrd/QRD_workspaceFileXml.qwsp
-vendor/etc/acdbdata/pineapple_qrd_sku2/QRD_pineapple_sku2_acdb_cal.acdb
-vendor/etc/acdbdata/pineapple_qrd_sku2/QRD_pineapple_sku2_workspaceFileXml.qwsp
 
 # ADSP
 vendor/bin/adsprpcd
@@ -261,6 +209,7 @@ odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc
 odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice.aidl.xml
 odm/lib64/libclient2slpi.notifier.so
 vendor/lib64/vendor.xiaomi.sensor.citsensorservice-V1-ndk.so
+vendor/lib64/xiaomi.system.hypsys.common-V1-ndk.so
 
 # CNE
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_vendor_symlink
@@ -403,7 +352,6 @@ odm/etc/camera/beauty_config_gl.json
 odm/etc/camera/beauty_config_gl_8g.json
 odm/etc/camera/beauty_style_nude.cng
 odm/etc/camera/bokehParams.json
-odm/etc/camera/cameraopt.json
 odm/etc/camera/camxoverridesettings.txt
 odm/etc/camera/com.xiaomi.dcal.ffu.golden
 odm/etc/camera/com.xiaomi.dcal.wt.golden
@@ -1753,7 +1701,6 @@ odm/lib64/libITT.so
 odm/lib64/libIntelligentFocus.so
 odm/lib64/libMiMotion.so
 odm/lib64/libMiStereoFactoryCalibAnalyzeBin_qual.so
-odm/lib64/libMiVideoFilter.so
 odm/lib64/libPlatformValidatorShared.so
 odm/lib64/libSNPE.so;SYMLINK=vendor/lib64/libSNPE.so
 odm/lib64/libSnpeDspV66Stub.so;FIX_SONAME
@@ -2150,7 +2097,6 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # Contexthub
-odm/etc/init/android.hardware.contexthub-service.qmi.rc
 vendor/bin/hw/android.hardware.contexthub-service.qmi
 vendor/etc/chre/preloaded_nanoapps.json
 
@@ -2500,12 +2446,6 @@ odm/etc/disp0/mdss_dsi_n9_42_02_0a_p2_dsc_cmd/mi_gc_0.txt
 odm/etc/disp0/mdss_dsi_n9_42_02_0a_p2_dsc_cmd/mi_gc_1.txt
 odm/etc/disp0/mdss_dsi_n9_42_02_0a_p2_dsc_cmd/mi_gc_2.txt
 odm/etc/disp0/mdss_dsi_n9_42_02_0a_p2_dsc_cmd/mi_gc_3.txt
-vendor/etc/display/3dlut-pt-onnx-ptq-htp-fp16.dlc
-vendor/etc/display/8635_sr_2x_y1280x720.dlc
-vendor/etc/display/8635_sr_2x_y540x960.dlc
-vendor/etc/display/8635_sr_2x_y720x1280.dlc
-vendor/etc/display/8635_sr_2x_y960x540.dlc
-vendor/etc/display/8635_sr_3x_y368x640.dlc
 vendor/etc/display/8635_sr_3x_y640x368.dlc
 vendor/etc/display/LUT.txt
 vendor/etc/display/LUT0.txt
@@ -2521,7 +2461,6 @@ vendor/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so
 odm/bin/hw/android.hardware.gnss-aidl-service-qti
 odm/etc/init/android.hardware.gnss-aidl-service-qti.rc
 odm/etc/izat_device.conf
-odm/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml
 odm/etc/vintf/manifest/vendor.qti.gnss-service.xml
 odm/lib64/android.hardware.gnss-aidl-impl-qti.so
 odm/lib64/sqlite3.so;MODULE_SUFFIX=_odm
@@ -2807,7 +2746,6 @@ vendor/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.qccvndhal_aidl-halimpl.so
 
 # QESDK
-system_ext/app/QesdkSysService/QesdkSysService.apk
 system_ext/etc/vintf/manifest/vendor.qti.qesdsys.service.xml
 system_ext/lib64/libqesdk_ndk_platform.qti.so
 vendor/bin/qesdk-manager
@@ -2893,7 +2831,6 @@ product/framework/uimgbamanagerlibrary.jar
 product/framework/uimservicelibrary.jar
 system/etc/sysconfig/qti_whitelist.xml
 system_ext/app/AtFwd2/AtFwd2.apk
-system_ext/app/ImsRcsService/ImsRcsService.apk
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_permissions.xml
@@ -3489,3 +3426,16 @@ vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 vendor/bin/nv_mac
 vendor/lib64/libxiaomi_qmi.so
 
+
+# --- added 2026-06-22: missing module deps for camera/ims (present in stock dump, omitted from list) ---
+odm/lib64/com.xiaomi.camdfx.so
+odm/lib64/libMiPhotoFilter.so
+odm/lib64/vendor.xiaomi.hardware.mediaeventgatherservice-V1-ndk.so
+system_ext/lib64/vendor.qti.ImsRtpService-V2-ndk.so
+system_ext/lib/vendor.qti.ImsRtpService-V2-ndk.so
+vendor/lib64/vendor.xiaomi.hardware.camera.synthetic-impl.so
+vendor/lib64/vendor.xiaomi.hardware.camera.synthetic-V1-ndk.so
+
+# --- added 2026-06-22: IMS library DECLARATIONS (jars present but undeclared → org.codeaurora.ims
+# fails uses-library scan → no ImsService → no VoLTE/calls). Fixes call audio/mic on VoLTE carriers. ---
+product/etc/permissions/ims_ext_common.xml

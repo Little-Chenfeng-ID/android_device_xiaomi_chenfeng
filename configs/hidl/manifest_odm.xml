@@ -1,7 +1,7 @@
 <manifest version="7.0" type="device" target-level="8">
-    <hal format="aidl">
-        <name>android.hardware.contexthub</name>
-        <version>2</version>
-        <fqname>IContextHub/default</fqname>
-    </hal>
+    <!-- contexthub HAL removed: declared here by SMGReborn but its service .rc is absent in our
+         stock variant, so the binary never starts and ContextHubSystemService.onBootPhase()
+         blocks system_server's main thread on waitForService() → watchdog kills system_server
+         → bootloop. Removing the declaration makes the framework skip it (boot fix). Restore
+         with a working contexthub-service.qmi.rc to re-enable the sensor hub later. -->
 </manifest>

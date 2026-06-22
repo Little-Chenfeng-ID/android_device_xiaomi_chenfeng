@@ -8,6 +8,10 @@ DEVICE_PATH := device/xiaomi/chenfeng
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES = true
+# Our locally-extracted stock blobs (A14-era) trip soong's ELF symbol check against the A16
+# framework (e.g. libwfdnative -> MotionEvent ABI). They work at runtime; disable the strict
+# pre-flight check for prebuilt ELFs (SMGReborn's pinned blobs didn't need it).
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
 
 # A/B
 AB_OTA_UPDATER := true
@@ -109,7 +113,8 @@ BOARD_BOOTCONFIG := \
     androidboot.usbcontroller=a600000.dwc3 \
     androidboot.load_modules_parallel=true \
     androidboot.hypervisor.protected_vm.supported=true \
-    androidboot.vendor.qspa=true
+    androidboot.vendor.qspa=true \
+    androidboot.vendor.qspa.modem=enabled
 
 # Kernel (prebuilt)
 PREBUILT_PATH := $(DEVICE_PATH)-kernel
